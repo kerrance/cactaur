@@ -29,7 +29,7 @@ body {
   max-width: 80vw;
   margin: 0 auto;
   padding: 1rem 0;
-  background-color: #d19a39;
+  background-color: #white;
   color: #020204;
 }
 
@@ -48,5 +48,31 @@ p:last-of-type {
 }
 
 ::selection {
+  background-color: #d19a39;
+}
+
+.cactuar__header,
+.cactuar__content,
+.cactuar__footer {
+  margin: 1rem auto;
+  padding: 0 1rem;
   background-color: #5bb137;
+  border: #0e7635 solid 1rem;
+}
+
+.cactuar__header {
+  margin-top: 0;
+}
+
+.cactuar__footer {
+  margin-bottom: 0;
+}
+
+.cactuar__container {
+  padding: 1rem 0;
+}
+
+.cactuar__link {
+  color: #0e7635;
+  font-weight: bold;
 }
