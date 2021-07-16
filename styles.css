@@ -72,6 +72,35 @@ p:last-of-type {
   padding: 1rem 0;
 }
 
+.cactuar__contexts {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.cactuar__context {
+  display: block;
+  width: 100%;
+  background-color: var(--orange);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.cactuar__context:last-of-type {
+  margin-right: 0;
+}
+
+.cactuar__context > .cactuar__heading {
+  padding: 1rem;
+  color: #020204;
+}
+
+.cactuar__context--active {
+  background-color: white;
+}
+
 .cactuar__link {
   color: #0e7635;
   font-weight: bold;
