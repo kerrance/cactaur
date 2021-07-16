@@ -58,6 +58,11 @@ p:last-of-type {
   background-color: var(--orange);
 }
 
+.cactuar__link {
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
 .cactuar__header,
 .cactuar__content,
 .cactuar__footer {
@@ -106,9 +111,4 @@ p:last-of-type {
 
 .cactuar__context--active {
   background-color: white;
-}
-
-.cactuar__link {
-  color: var(--dark-green);
-  font-weight: bold;
 }
