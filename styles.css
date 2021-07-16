@@ -115,6 +115,14 @@ p:last-of-type {
   background-color: white;
 }
 
+.cactuar__pair {
+  margin-bottom: 1rem;
+}
+
+.cactuar__pair:last-of-type {
+  margin-bottom: 0;
+}
+
 .cactuar__title {
   width: 100%;
   background-color: white;
@@ -145,7 +153,10 @@ p:last-of-type {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  padding: 0.6rem 0.4rem 0.4rem;
+}
+
+.cactuar__inner {
+  padding: 0.6rem 0.4rem 0;
 }
 
 .cactuar__response:last-of-type {
