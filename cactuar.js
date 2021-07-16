@@ -7,7 +7,7 @@
  */
 ( function() {
   const questionTitle = document.getElementsByClassName( 'cactuar__title' );
-  let i;
+  let questionPairInt;
 
   function expandQuestionResponse() {
     this.classList.toggle( 'cactuar__title--active' );
@@ -21,8 +21,8 @@
   }
 
   function eventListener() {
-    for ( i = 0; i < questionTitle.length; i++ ) {
-      questionTitle[i].addEventListener( 'click', expandQuestionResponse );
+    for ( questionPairInt = 0; questionPairInt < questionTitle.length; questionPairInt++ ) {
+      questionTitle[questionPairInt].addEventListener( 'click', expandQuestionResponse );
     }
   }
 
