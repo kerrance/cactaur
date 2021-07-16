@@ -1,3 +1,10 @@
+:root {
+  --black: #020204;
+  --light-green: #5bb137;
+  --dark-green: #0e7635;
+  --orange: #d19a39;
+}
+
 html,
 body,
 h1,
@@ -29,8 +36,8 @@ body {
   max-width: 80vw;
   margin: 0 auto;
   padding: 1rem 0;
-  background-color: #white;
-  color: #020204;
+  background-color: white;
+  color: var(--black);
 }
 
 @media (max-width: 767px) {
@@ -48,7 +55,7 @@ p:last-of-type {
 }
 
 ::selection {
-  background-color: #d19a39;
+  background-color: var(--orange);
 }
 
 .cactuar__header,
@@ -56,8 +63,8 @@ p:last-of-type {
 .cactuar__footer {
   margin: 1rem auto;
   padding: 0 1rem;
-  background-color: #5bb137;
-  border: #0e7635 solid 1rem;
+  background-color: var(--light-green);
+  border: var(--dark-green) solid 1rem;
 }
 
 .cactuar__header {
@@ -102,6 +109,6 @@ p:last-of-type {
 }
 
 .cactuar__link {
-  color: #0e7635;
+  color: var(--dark-green);
   font-weight: bold;
 }
