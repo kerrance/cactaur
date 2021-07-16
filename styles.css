@@ -109,6 +109,39 @@ p:last-of-type {
   color: #020204;
 }
 
-.cactuar__context--active {
+.cactuar__title {
+  width: 100%;
   background-color: white;
+  padding: 0.4rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: left;
+}
+
+.cactuar__title:focus,
+.cactuar__title:active,
+.cactuar__title:hover {
+  color: var(--orange);
+}
+
+.cactuar__title::after {
+  content: '+';
+  float: right;
+  margin-left: 0.4rem;
+}
+
+.cactuar__title--active:after {
+  content: "-";
+}
+
+.cactuar__response {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0.6rem 0.4rem 0.4rem;
+}
+
+.cactuar__response:last-of-type {
+  padding-bottom: 0;
 }
