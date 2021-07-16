@@ -33,16 +33,16 @@ select {
 }
 
 body {
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 1rem 0;
   background-color: white;
   color: var(--black);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   body {
-    max-width: 90vw;
+    max-width: 80vw;
   }
 }
 
@@ -56,6 +56,11 @@ p:last-of-type {
 
 ::selection {
   background-color: var(--orange);
+}
+
+.cactuar__link {
+  color: var(--dark-green);
+  font-weight: bold;
 }
 
 .cactuar__header,
@@ -81,34 +86,99 @@ p:last-of-type {
 
 .cactuar__contexts {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cactuar__contexts {
+    flex-wrap: nowrap;
+  }
 }
 
 .cactuar__context {
   display: block;
   width: 100%;
   background-color: var(--orange);
-  margin-right: 1rem;
+  color: #020204;
+  margin-bottom: 1rem;
+  padding: 1rem;
   text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .cactuar__context {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
 }
 
 .cactuar__context:last-of-type {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
-.cactuar__context > .cactuar__heading {
-  padding: 1rem;
-  color: #020204;
+@media (min-width: 768px) {
+  .cactuar__context:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .cactuar__context--active {
   background-color: white;
 }
 
-.cactuar__link {
-  color: var(--dark-green);
-  font-weight: bold;
+.cactuar__pair {
+  margin-bottom: 1rem;
+}
+
+.cactuar__pair:last-of-type {
+  margin-bottom: 0;
+}
+
+.cactuar__title {
+  width: 100%;
+  background-color: white;
+  padding: 0.4rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: left;
+}
+
+.cactuar__title:focus,
+.cactuar__title:active,
+.cactuar__title:hover {
+  color: var(--orange);
+}
+
+.cactuar__title::after {
+  content: '+';
+  float: right;
+  margin-left: 0.4rem;
+}
+
+.cactuar__title--active:after {
+  content: "-";
+}
+
+.cactuar__response {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.cactuar__inner {
+  padding: 0.6rem 0.4rem 0;
+}
+
+.cactuar__response:last-of-type {
+  padding-bottom: 0;
 }
