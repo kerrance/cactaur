@@ -15,7 +15,7 @@
     this.classList.toggle( 'cactuar__title--active' );
     let questionResponse = this.nextElementSibling;
 
-    if ( questionResponse.style.maxHeight ){
+    if ( questionResponse.style.maxHeight ) {
       questionResponse.style.maxHeight = null;
     } else {
       questionResponse.style.maxHeight = questionResponse.scrollHeight + 'px';
