@@ -33,16 +33,16 @@ select {
 }
 
 body {
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 1rem 0;
   background-color: white;
   color: var(--black);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   body {
-    max-width: 90vw;
+    max-width: 80vw;
   }
 }
 
@@ -86,6 +86,7 @@ p:last-of-type {
 
 .cactuar__contexts {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -93,12 +94,18 @@ p:last-of-type {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .cactuar__contexts {
+    flex-wrap: nowrap;
+  }
+}
+
 .cactuar__context {
   display: block;
   width: 100%;
   background-color: var(--orange);
   color: #020204;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   text-decoration: none;
   font-weight: bold;
@@ -107,8 +114,21 @@ p:last-of-type {
   outline: none;
 }
 
+@media (min-width: 768px) {
+  .cactuar__context {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+}
+
 .cactuar__context:last-of-type {
-  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .cactuar__context:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .cactuar__context--active {
